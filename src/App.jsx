@@ -73,10 +73,10 @@ function App({ length = 6, validSeconds = 5 }) {
       <h2
         id='otp-display'
         ref={otpDisplayRef}
-        className='text-sm mb-4'>
+        className='text-sm mb-4 text-center'>
         {otp || "Click 'Generate OTP' to get a code"}
       </h2>
-      <p id='otp-timer' aria-live='assertive'>
+      <p id='otp-timer' aria-live='assertive' className='text-center'>
         {timerMessage}
       </p>
       <button
